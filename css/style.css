@@ -1,0 +1,585 @@
+@font-face {
+    font-family: 'GACA-Bold';
+    src: url(../font/GretaArabicAR_LTBold.ttf) format('truetype');
+    src: url(../font/GretaArabicAR_LTBold.eot);
+    src: url(../font/GretaArabicAR_LTBold.woff) format('woff');
+    src: url(../font/GretaArabicAR_LTBold.woff2);
+}
+
+@font-face {
+    font-family: 'GACA-Light';
+    src: url(../font/GretaArabicAR_LTLight.ttf) format('truetype');
+    src: url(../font/GretaArabicAR_LTLight.eot);
+    src: url(../font/GretaArabicAR_LTLight.woff) format('woff');
+    src: url(../font/GretaArabicAR_LTLight.woff2);
+}
+
+@font-face {
+    font-family: 'GACA-Regular';
+    src: url(../font/GretaArabicAR_LTRegular.ttf) format('truetype');
+    src: url(../font/GretaArabicAR_LTRegular.eot);
+    src: url(../font/GretaArabicAR_LTRegular.woff) format('woff');
+    src: url(../font/GretaArabicAR_LTRegular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+.PageConent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 'Header' 'Body' 'Footer';
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.menue {
+    grid-area: Header;
+
+}
+
+.body {
+    grid-area: Body;
+    background-image: url(../images/BG\ Clouds.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.fotter {
+    grid-area: Footer;
+}
+
+.top-section {
+
+    background-color: #fff;
+}
+
+.Logo-Section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.supportLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.supportLink>div {
+    margin: 0 30px 0 0;
+}
+
+.supportLink>div a {
+    font-family: 'GACA-Regular';
+    color: #0175CA;
+}
+
+.supportLink>div a span {
+    margin: 0 10px;
+}
+
+.supportLink>div:last-child a {
+    font-family: 'GACA-Bold';
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.top-section {
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #0175CA;
+}
+
+.nav-section {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 19px 40px;
+    color: #fff;
+    font-family: 'GACA-Bold';
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.nav-item a:hover,
+.nav-item a.active {
+    background-color: #264478;
+    color: #fff;
+}
+
+.userAction,
+.userAction a {
+    color: #fff;
+    font-family: 'GACA-Bold';
+    font-size: 16px;
+    margin: 0 10px;
+    border: none;
+    transition: 0.3s;
+}
+
+.userAction a:hover {
+    color: #b6b9be;
+}
+
+.Socialchannels a {
+    margin: 0 3px;
+}
+
+.hero-section {
+    position: relative;
+}
+
+.HeroCta {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+}
+
+.ctaElemnt {
+    display: flex;
+}
+
+.ctaElemnt>div {
+    margin: 0 10px;
+    color: #fff;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.ctaElemnt>div:first-child {
+    background-color: #264478;
+}
+
+.ctaElemnt>div a {
+    color: #264478;
+    font-family: 'GACA-Bold';
+    font-size: 20px;
+}
+
+.ctaElemnt>div a.active {
+    color: #fff;
+    font-family: 'GACA-Bold';
+}
+
+.centredSection {
+    text-align: center;
+}
+
+.title {
+    color: #0175CA;
+    font-family: 'GACA-Bold';
+    margin: 0 !important;
+}
+
+.title h3 {
+    margin: 0 !important;
+}
+
+.title-h2 {
+    font-size: 40px;
+}
+
+.title-h3 {
+    font-size: 35px;
+}
+
+.title-h4 {
+    font-size: 20px;
+}
+
+.Title-caption {
+    font-family: 'GACA-Regular';
+    font-size: 20px;
+
+}
+
+.centredCta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.buttonCta {
+    font-family: 'GACA-Bold';
+    font: 24px;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.orginalCta {
+    color: #0175CA;
+    border: 1px solid #0175CA;
+    background-color: #fff;
+}
+
+.accentCta {
+    color: #fff;
+    border: 1px solid #0175CA;
+    background-color: #0175CA;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.two-elements-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-title {
+    font-size: 24px;
+}
+
+.btn_ {
+    background-color: #0175CA !important;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'GACA-Bold';
+    width: 100%;
+    background-position: 35% center !important;
+    transition: 0.3s;
+
+
+}
+
+.brn_:hover {
+    background-color: #0c578d !important;
+}
+
+.btn_ .search {
+    background-image: url(../images/magnifying-glass.svg) !important;
+    background-repeat: no-repeat;
+
+
+}
+
+.btn_ span.icon {
+    float: left;
+    width: 10px;
+    height: 40px;
+}
+
+.search {
+    background: url(../images/magnifying-glass.svg) no-repeat;
+}
+
+thead {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+body {
+
+    background: #f4f4f4;
+}
+
+.list-wrapper {
+    padding: 15px;
+    overflow: hidden;
+}
+
+
+
+.list-item p {
+    margin: 0;
+}
+
+.simple-pagination ul {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.simple-pagination li {
+    display: inline-block;
+    margin-right: 5px;
+    transition: .3s;
+}
+
+.simple-pagination li:hover {
+    background-color: #0175CA;
+    color: #fff;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+    color: #0175CA;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #EEE;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px 0px #EEE;
+}
+
+.simple-pagination .current {
+    color: #FFF;
+    background-color: #0175CA;
+    border: none;
+    border-radius: 5px;
+}
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+    background: #fff;
+    color: #0175CA;
+}
+
+.Job-holder {
+    background-color: #ffff;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100% !important;
+    margin: 15px 0;
+}
+
+.Job-holder>div:first-child {
+    width: 80%;
+
+}
+
+.job-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.job-info-details {
+    font-family: 'GACA-Bold';
+    font-size: 16px;
+    color: #575757;
+}
+
+
+
+.Job-holder>div:last-child {
+    width: 20%;
+
+}
+
+.jobdept {
+    color: #264478;
+    font-family: "GACA-Regular";
+    font-size: 18px;
+}
+
+.job-caption {
+    font-family: "GACA-Regular";
+    color: #575757;
+    font-size: 16px;
+
+}
+
+.blue-job-sub-info {
+    color: #264478;
+    font-family: "GACA-Regular";
+    font-size: 16px;
+}
+
+.dark-job-sub-info {
+    color: #575757;
+    font-family: "GACA-Regular";
+    font-size: 16px;
+}
+
+.applay-btn {
+    padding: 15px;
+    color: #0175CA;
+    font-family: 'GACA-Bold';
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px solid #0175CA;
+    border-radius: 10px;
+    transition: 0.3s !important;
+
+}
+
+.job-link a {
+    color: #575757;
+
+}
+
+.applay-btn:hover {
+    background-color: #0175CA !important;
+    color: #fff !important;
+}
+
+table.careersTable {
+    width: 100%;
+}
+
+table.dataTable.careersTable thead th {
+    border-bottom: 40px !important;
+}
+
+table.dataTable.careersTable tfoot th {
+    border-top: 0 !important;
+}
+
+.careerstable>:not(:first-child) {
+    border-top: none !important;
+}
+
+.careerstable>:not(caption)>*>* {
+    padding: 0.5rem 0.5rem;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 0px;
+    border: none;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+.careersTableHolder {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #fff !important;
+    padding: 30px;
+    margin: 15px 0;
+    position: relative;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+    .supportLink {
+        display: none !important;
+    }
+
+    #Xl-nav {
+        display: none !important;
+    }
+
+    #mobile-nav {
+        display: block;
+
+    }
+
+    .pushy-button {
+        background-color: #0175CA !important;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .nav-icon>div {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .supportLink {
+        display: none !important;
+    }
+
+    #Xl-nav {
+        display: none !important;
+    }
+}
+
+@media (min-width:913px) and (max-width:1199px) {
+    .nav-item a {
+        padding: 10px 30px;
+        font-size: 13px;
+    }
+
+    .userAction,
+    .userAction a {
+
+        font-size: 12px;
+        margin: 0 5px;
+    }
+
+    .supportLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .supportLink>div {
+        margin: 0 5px 0 0;
+    }
+
+    .supportLink>div a {
+        font-family: 'GACA-Regular';
+        color: #0175CA;
+    }
+
+    .supportLink>div a span {
+        margin: 0 5px;
+        font-size: 13px;
+    }
+
+    .supportLink>div:last-child a {
+        font-family: 'GACA-Bold';
+    }
+
+    .ctaElemnt>div {
+        margin: 0 10px;
+
+
+        padding: 5px 15px;
+        border-radius: 10px;
+    }
+
+    .ctaElemnt>div:first-child {
+        background-color: #264478;
+    }
+
+    .ctaElemnt>div a {
+
+        font-size: 13px;
+    }
+}
